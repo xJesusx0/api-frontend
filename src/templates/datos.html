@@ -1,0 +1,27 @@
+{% extends "plantilla.html" %}
+
+{% block css %}
+  <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/estilo datos.css')}}">
+{% endblock %}
+
+{% block body %}
+    <h1>Datos de las ventas</h1>
+    <table id="miTabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Mes</th>
+          <th>Ventas</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for dato in datos %}
+          <tr>
+            <td>{{ dato["TIENDA"] }}</td>
+            <td>{{ dato["MES"] }}</td>
+            <td>{{ dato["VENTAS"] }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+{% endblock %}

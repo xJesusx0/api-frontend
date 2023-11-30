@@ -1,0 +1,36 @@
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #ff4800;
+
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ff4800;
+}
+
+th {
+    background-color: #1b1b1b;
+    color: #ff4800;
+}
+
+tr:hover {
+    background-color: #333333;
+}
+
+#miTabla{
+    margin: 0 auto;
+    width: 50%;
+    color:#ff4800;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #222222;
+    border: 2px solid #ff4800;  
+
+}
+

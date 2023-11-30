@@ -1,0 +1,48 @@
+{% extends "plantilla.html" %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/estilo index.css')}}">
+{% endblock %}
+{% block body %}
+
+
+    <div class="contenido">
+
+    </div>
+    <header>
+        <h1>Empresa de Recopilación de Datos</h1>
+    </header>
+    <div class="contenedor-texto">
+        <section>
+            <h2>Acerca del proyecto</h2>
+            <p>En este proyecto se creo un programa en java que recopilaba datos de las ventas de algunas tiendas deportivas</p>
+            <p>Estos datos fueron almacenados en un archivo de tipo JSON, y este archivo fue subido a la nube</p>
+            <p>Y finalmente se creo esta pagina web que accede a estos datos usando la libreria requests de python</p>
+        </section>
+    </div>
+    
+    <div class="contenedor-texto">
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Recopilación de datos de ventas</li>
+                <li>Análisis de tendencias de mercado</li>
+                <li>Informes personalizados para empresas</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="contenedor-texto">
+        <section>
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos en github <a href="https://github.com/xJesusx0">aqui</a></p>
+        </section>
+    </div>
+          
+    <div class="contenedor-texto">
+        <footer>
+            <p>&copy; 2023 Empresa de Recopilación de Datos</p>
+        </footer>
+    </div>
+
+{% endblock %}

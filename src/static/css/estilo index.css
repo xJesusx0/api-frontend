@@ -1,0 +1,20 @@
+body{
+    color: #ff4800;
+
+}
+section{
+    background-color: #1b1b1b;
+    color: #ff4800;
+    padding: 1px;
+    width: 80%;
+}
+
+
+.contenedor-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    width: 100%;
+
+}

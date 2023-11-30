@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/estilo plantilla.css')}}">
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+    <div class="contenedor">
+        <h3><a href="/">Inicio</a></h3>
+        <h3><a href="/datos">Datos de ventas</a></h3>
+        <h3>Acerca de nosotros</h3>
+        <h3>Foro</h3>
+    </div>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
